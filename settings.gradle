@@ -1,0 +1,3 @@
+include ':universalitemdecoration'
+include ':app'
+rootProject.name = "UniversalItemDecoration"
