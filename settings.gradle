@@ -1,3 +1,2 @@
-include ':universalitemdecoration'
+include ':varieditemdecoration'
 include ':app'
-rootProject.name = "UniversalItemDecoration"
