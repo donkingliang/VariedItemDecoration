@@ -1,8 +1,7 @@
 package com.donkingliang.varieditemdecoration;
 
 import android.graphics.drawable.Drawable;
-
-import androidx.recyclerview.widget.RecyclerView;
+import android.support.v7.widget.RecyclerView;
 
 /**
  * @Author teach liang

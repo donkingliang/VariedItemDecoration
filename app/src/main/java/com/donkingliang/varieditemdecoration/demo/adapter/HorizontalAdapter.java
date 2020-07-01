@@ -1,6 +1,7 @@
 package com.donkingliang.varieditemdecoration.demo.adapter;
 
 import android.content.Context;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +10,6 @@ import android.widget.Toast;
 
 import com.donkingliang.varieditemdecoration.demo.R;
 
-import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * @Author donkingliang
@@ -43,7 +43,7 @@ public class HorizontalAdapter extends RecyclerView.Adapter<HorizontalAdapter.Vi
         holder.textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context,holder.textView.getText().toString(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, holder.textView.getText().toString(), Toast.LENGTH_SHORT).show();
             }
         });
     }
