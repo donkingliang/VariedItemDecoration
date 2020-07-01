@@ -6,7 +6,6 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 /**
@@ -145,11 +144,11 @@ public abstract class GridVariedItemDecoration extends RecyclerView.ItemDecorati
 
             // 最后一列的开始位置
             int lastColumnPosition = itemCount - 1;
-            while (lastColumnPosition >= 0 && spanSizeLookup.getSpanIndex(lastColumnPosition, itemCount) != 0) {
+            while (lastColumnPosition >= 0 && spanSizeLookup.getSpanIndex(lastColumnPosition, spanCount) != 0) {
                 lastColumnPosition--;
             }
 
-            return lastColumnPosition >= position;
+            return lastColumnPosition <= position;
         }
     }
 

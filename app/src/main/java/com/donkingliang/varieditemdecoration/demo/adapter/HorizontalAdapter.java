@@ -16,24 +16,24 @@ import androidx.recyclerview.widget.RecyclerView;
  * @Description
  * @Date 2020/3/17
  */
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
+public class HorizontalAdapter extends RecyclerView.Adapter<HorizontalAdapter.ViewHolder> {
 
     private Context context;
     private String text;
 
-    public RecyclerViewAdapter(Context context, String text) {
+    public HorizontalAdapter(Context context, String text) {
         this.context = context;
         this.text = text;
     }
 
     @Override
     public int getItemCount() {
-        return 28;
+        return 30;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.adapter_recycler_item, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.horizontal_adapter_item, parent, false);
         return new ViewHolder(view);
     }
 

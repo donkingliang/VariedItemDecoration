@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/v_linear"
+        android:orderInCategory="100"
+        android:title="垂直LinearLayout" />
+
+    <item
+        android:id="@+id/h_linear"
+        android:orderInCategory="100"
+        android:title="水平LinearLayout" />
+
+    <item
+        android:id="@+id/m_linear"
+        android:orderInCategory="100"
+        android:title="多种间隔LinearLayout" />
+
+    <item
+        android:id="@+id/v_grid"
+        android:orderInCategory="100"
+        android:title="垂直GridLayout" />
+
+    <item
+        android:id="@+id/h_grid"
+        android:orderInCategory="100"
+        android:title="水平GridLayout" />
+
+    <item
+        android:id="@+id/m_grid"
+        android:orderInCategory="100"
+        android:title="多种间隔GridLayout" />
+
+</menu>
