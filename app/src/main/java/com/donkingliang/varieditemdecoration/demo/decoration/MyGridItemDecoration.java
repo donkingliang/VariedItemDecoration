@@ -7,8 +7,8 @@ import com.donkingliang.varieditemdecoration.GridVariedItemDecoration;
 import com.donkingliang.varieditemdecoration.demo.R;
 
 /**
- * @Author teach liang
- * @Description
+ * @Author donkingliang
+ * @Description 自定义GridItemDecoration
  * @Date 2020/7/1
  */
 public class MyGridItemDecoration extends GridVariedItemDecoration {
@@ -41,7 +41,7 @@ public class MyGridItemDecoration extends GridVariedItemDecoration {
 
     @Override
     public Drawable getRowDivider(int position) {
-        // 根据position返回Drawable
+        // 根据position返回Drawable 可以为null
         return rowDrawables[position % 5];
     }
 
@@ -53,7 +53,7 @@ public class MyGridItemDecoration extends GridVariedItemDecoration {
 
     @Override
     public Drawable getColumnDivider(int position) {
-        // 根据position返回Drawable
+        // 根据position返回Drawable 可以为null
         return columnDrawables[position % 5];
     }
 }

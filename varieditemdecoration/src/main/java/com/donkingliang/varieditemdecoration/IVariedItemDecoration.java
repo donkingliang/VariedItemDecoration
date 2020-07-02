@@ -4,7 +4,7 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 
 /**
- * @Author teach liang
+ * @Author QQ:1043214265 github:https://github.com/donkingliang
  * @Description 定义VariedItemDecoration的接口模板
  * @Date 2020/6/22
  */

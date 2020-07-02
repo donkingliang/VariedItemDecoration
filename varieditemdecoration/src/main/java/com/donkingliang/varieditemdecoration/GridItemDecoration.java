@@ -3,8 +3,8 @@ package com.donkingliang.varieditemdecoration;
 import android.graphics.drawable.Drawable;
 
 /**
- * @Author teach liang
- * @Description
+ * @Author donkingliang QQ:1043214265 github:https://github.com/donkingliang
+ * @Description 通用的GridItemDecoration类，用于设置GridLayoutManager的RecyclerView间隔装饰
  * @Date 2020/6/19
  */
 public class GridItemDecoration extends GridVariedItemDecoration {
@@ -14,7 +14,6 @@ public class GridItemDecoration extends GridVariedItemDecoration {
 
     private int mRowDividerSize;
     private int mColumnDividerSize;
-
 
     public GridItemDecoration(int rowDividerSize, Drawable rowDivider, int columnDividerSize, Drawable columnDivider) {
         mRowDividerSize = rowDividerSize;

@@ -7,8 +7,8 @@ import com.donkingliang.varieditemdecoration.LinearVariedItemDecoration;
 import com.donkingliang.varieditemdecoration.demo.R;
 
 /**
- * @Author teach liang
- * @Description
+ * @Author donkingliang
+ * @Description 自定义LinearItemDecoration
  * @Date 2020/7/1
  */
 public class MyLinearItemDecoration extends LinearVariedItemDecoration {
@@ -37,7 +37,7 @@ public class MyLinearItemDecoration extends LinearVariedItemDecoration {
 
     @Override
     public Drawable getDivider(int position) {
-        // 根据position返回Drawable
+        // 根据position返回Drawable 可以为null
         return drawables[position % 5];
     }
 }
