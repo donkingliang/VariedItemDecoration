@@ -7,8 +7,8 @@ import com.donkingliang.varieditemdecoration.GridVariedItemDecoration;
 import com.donkingliang.varieditemdecoration.demo.R;
 
 /**
- * @Author teach liang
- * @Description
+ * @Author donkingliang
+ * @Description 自定义GridItemDecoration
  * @Date 2020/7/1
  */
 public class MyGridItemDecoration extends GridVariedItemDecoration {
@@ -19,17 +19,17 @@ public class MyGridItemDecoration extends GridVariedItemDecoration {
 
     public MyGridItemDecoration(Context context) {
 
-        rowDrawables[0] =context.getResources().getDrawable(R.drawable.row_divider_1);
-        rowDrawables[1] =context.getResources().getDrawable(R.drawable.row_divider_2);
-        rowDrawables[2] =context.getResources().getDrawable(R.drawable.row_divider_3);
-        rowDrawables[3] =context.getResources().getDrawable(R.drawable.row_divider_4);
-        rowDrawables[4] =context.getResources().getDrawable(R.drawable.row_divider_5);
+        rowDrawables[0] = context.getResources().getDrawable(R.drawable.row_divider_1);
+        rowDrawables[1] = context.getResources().getDrawable(R.drawable.row_divider_2);
+        rowDrawables[2] = context.getResources().getDrawable(R.drawable.row_divider_3);
+        rowDrawables[3] = context.getResources().getDrawable(R.drawable.row_divider_4);
+        rowDrawables[4] = context.getResources().getDrawable(R.drawable.row_divider_5);
 
-        columnDrawables[0] =context.getResources().getDrawable(R.drawable.row_divider_5);
-        columnDrawables[1] =context.getResources().getDrawable(R.drawable.row_divider_4);
-        columnDrawables[2] =context.getResources().getDrawable(R.drawable.row_divider_3);
-        columnDrawables[3] =context.getResources().getDrawable(R.drawable.row_divider_2);
-        columnDrawables[4] =context.getResources().getDrawable(R.drawable.row_divider_1);
+        columnDrawables[0] = context.getResources().getDrawable(R.drawable.row_divider_5);
+        columnDrawables[1] = context.getResources().getDrawable(R.drawable.row_divider_4);
+        columnDrawables[2] = context.getResources().getDrawable(R.drawable.row_divider_3);
+        columnDrawables[3] = context.getResources().getDrawable(R.drawable.row_divider_2);
+        columnDrawables[4] = context.getResources().getDrawable(R.drawable.row_divider_1);
     }
 
 
@@ -41,7 +41,7 @@ public class MyGridItemDecoration extends GridVariedItemDecoration {
 
     @Override
     public Drawable getRowDivider(int position) {
-        // 根据position返回Drawable
+        // 根据position返回Drawable  可以为null
         return rowDrawables[position % 5];
     }
 
@@ -53,7 +53,7 @@ public class MyGridItemDecoration extends GridVariedItemDecoration {
 
     @Override
     public Drawable getColumnDivider(int position) {
-        // 根据position返回Drawable
+        // 根据position返回Drawable 可以为null
         return columnDrawables[position % 5];
     }
 }

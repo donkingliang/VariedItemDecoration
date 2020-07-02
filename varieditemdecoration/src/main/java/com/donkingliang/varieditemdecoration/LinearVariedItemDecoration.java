@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 /**
- * @Author teach liang
- * @Description
+ * @Author donkingliang QQ:1043214265 github:https://github.com/donkingliang
+ * @Description 自定义LinearItemDecoration的基类，根据position返回每个item的间隔大小和装饰Drawable，Drawable可以为null
  * @Date 2020/6/22
  */
 public abstract class LinearVariedItemDecoration extends RecyclerView.ItemDecoration implements IVariedItemDecoration {
@@ -105,6 +105,9 @@ public abstract class LinearVariedItemDecoration extends RecyclerView.ItemDecora
         return position == itemCount - 1;
     }
 
+    /**
+     * 设置是否显示最后一个项的Divider，默认不显示
+     */
     public void setShowLastDivider(boolean isShow) {
         showLastDivider = isShow;
     }

@@ -9,8 +9,9 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 /**
- * @Author teach liang
- * @Description
+ * @Author donkingliang QQ:1043214265 github:https://github.com/donkingliang
+ * @Description 自定义GridItemDecoration的基类，根据position返回每个item的间隔大小和装饰Drawable，Drawable可以为null。
+ * 垂直间隔和水平间隔分别设置
  * @Date 2020/6/22
  */
 public abstract class GridVariedItemDecoration extends RecyclerView.ItemDecoration implements IVariedItemDecoration {
@@ -75,7 +76,6 @@ public abstract class GridVariedItemDecoration extends RecyclerView.ItemDecorati
         }
         canvas.restore();
     }
-
 
     @Override
     public void getItemOffsets(Rect outRect, View view, RecyclerView parent,
@@ -191,6 +191,9 @@ public abstract class GridVariedItemDecoration extends RecyclerView.ItemDecorati
         }
     }
 
+    /**
+     * 设置是否显示最后一行的Divider，默认不显示
+     */
     public void setShowLastDivider(boolean isShow) {
         showLastDivider = isShow;
     }

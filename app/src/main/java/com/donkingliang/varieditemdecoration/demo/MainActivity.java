@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerView);
 
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(new VerticalAdapter(this, "Item - "));
+
+        // 添加Decoration
+        recyclerView.addItemDecoration(new LinearItemDecoration(20, getResources().getDrawable(R.drawable.row_divider)));
+
         // 显示最后item的Divider，默认false
 //        decoration.setShowLastDivider(true);
 
