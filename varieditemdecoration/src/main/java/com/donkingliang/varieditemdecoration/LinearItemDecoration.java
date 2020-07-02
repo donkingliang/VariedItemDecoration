@@ -3,7 +3,7 @@ package com.donkingliang.varieditemdecoration;
 import android.graphics.drawable.Drawable;
 
 /**
- * @Author QQ:1043214265 github:https://github.com/donkingliang
+ * @Author donkingliang QQ:1043214265 github:https://github.com/donkingliang
  * @Description 通用的LinearItemDecoration类，用于设置LinearLayoutManager的RecyclerView间隔装饰
  * @Date 2020/6/19
  */

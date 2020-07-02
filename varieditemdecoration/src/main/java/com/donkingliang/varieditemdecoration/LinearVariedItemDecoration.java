@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * @Author QQ:1043214265 github:https://github.com/donkingliang
+ * @Author donkingliang QQ:1043214265 github:https://github.com/donkingliang
  * @Description 自定义LinearItemDecoration的基类，根据position返回每个item的间隔大小和装饰Drawable，Drawable可以为null
  * @Date 2020/6/22
  */
