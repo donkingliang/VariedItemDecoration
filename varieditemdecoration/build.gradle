@@ -39,7 +39,7 @@ tasks.withType(JavaCompile) {
 // 打包源码
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
-    archiveClassifier = 'sources'
+    classifier = 'sources'
 }
 
 task javadoc(type: Javadoc) {
