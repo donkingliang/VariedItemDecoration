@@ -1,4 +1,4 @@
-VariedItemDecoration是通用的Recycler ItemDecoration。使用方便，并且支持同时显示多种大小和样式的Decoration，能很简单的自定义每个item的Decoration，根据position返回对应item的装饰drawable和大小。
+VariedItemDecoration是通用的Recycler ItemDecoration。可实现在一个列表里显示多种不同样式的ItemDecoration；可定制每个item的ItemDecoration的显示和样式。使用方便，并且提供非常简单的自定义ItemDecoration方式，根据position返回对应item的装饰drawable和大小。
 
 ### 引入依赖
 
